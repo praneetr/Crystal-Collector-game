@@ -1,0 +1,47 @@
+#name{
+  color:white;
+  background-color:orange;
+}
+
+
+.paragraph{
+  background-color: #FFEBCD;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.result{
+  background-color: aqua;
+  color: black;
+  padding: 5px;
+}
+
+.random_number, .total_score, .score{
+  font-size: 30px;
+  background-color: #32CD32;
+  font: black;
+}
+
+
+.pictures {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.main {
+  padding: 5px;
+}
+
+.img{
+  width:125px;
+  height:125px;
+  padding: 5px;
+}
+.navbar-bottom {
+  padding: 30px;
+  font-size: 12px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  background: black;
+}

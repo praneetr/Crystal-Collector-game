@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Crystal Collector!</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container main">
+    <div class="row">
+      <h1 class="jumbotron" id="name">Crystals Collector!</h1>
+    </div> 
+
+        <div class="row">
+            <h3 class="paragraph">
+              <p>You will be given a random number at the start of the   game.</p>
+              <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+              <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
+              <p> The value of each crystal is hidden until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+            </h3>
+        </div>
+</div>
+
+  <div class="container">
+    <div class="row twl">
+      <div class="col-md-6">
+        <div class="random_number"></div>
+      </div>
+      
+      <div class="col-md-6">  
+        <div class="result">
+            <h2>
+              Wins:<div id="yourWins"></div>
+              Losses:<div id="yourLosses"></div>
+            </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class = "container pictures">
+  <div class="row crystals">
+    <div class="col-md-12">
+      <img src="assets/images/crystal1.jpg" class="img" id="purple_crystal">
+      <img src="assets/images/crystal2.jpg" class="img" id="white_crystal">
+      <img src="assets/images/crystal3.jpg" class="img" id="green_crystal">
+      <img src="assets/images/crystal4.jpg" class="img" id="pink_crystal">
+    </div>
+  </div>  
+</div>   
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="score">
+        <h2>Your total score is:</h2>
+      </div>
+      <div class="total_score"></div>  
+    </div>
+  </div>
+</div>
+ 
+ <footer>
+      <div class="footer navbar-bottom">
+        <p class="text-center">
+          &#9400; Copyright 2017 Praneet Row
+        </p>
+      </div>
+</footer>
+
+<script src="assets/javascript/game.js"></script>
+  
+  
+</body>
+</html>
