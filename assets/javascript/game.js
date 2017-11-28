@@ -1,15 +1,17 @@
 
   // random number shown at the start of the game should be between 19 - 120
-
+$(document).ready(function(){
   var random_number= Math.floor((Math.random() * 100) + 19);
+ // $('.random_number').css( "color", "red" );
+
 
   
 
 // all variables set to 0
 
-  var yourWins= 0;
-  var yourLosses= 0;
-  var total_score=0;
+  var yourWins= 0,
+      yourLosses= 0,
+      total_score=0;
   
 
 //computer randomly selects a value between 1-12 for each crystal
@@ -27,17 +29,12 @@
       random_number = Math.floor((Math.random() * 100) + 19);
 
 // this will reset clear the history of the random number each time the game is completed
-      
-      $('.random_number').empty();
+    
+     $('.random_number').empty();
 
 // this will display the random number each game
-     
-     $('.random_number').append(random_number  + " " + "is the random number");
 
-      var purple_crystal = Math.floor((Math.random() * 12) + 1);
-      var white_crystal = Math.floor((Math.random() * 12) + 1);
-      var green_crystal = Math.floor((Math.random() * 12) + 1);
-      var pink_crystal = Math.floor((Math.random() * 12) + 1);
+     $('.random_number').append(random_number  + " " + "is the random number");
       updateAddition();
     } 
 
@@ -92,8 +89,10 @@
   }
 
 
-  $('.random_number').append(random_number + " " + "is the random number");
+
+  $('.random_number').append(random_number + " " + "<span>is the random number</span>");
   $('.total_score').append(total_score);
-
-
+  //can alternatively use the code below instead of span
+  //$('.random_number span').css( "font-weight", "bold" );
+});
   

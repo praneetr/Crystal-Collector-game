@@ -22,6 +22,10 @@
   font: black;
 }
 
+.random_number span {
+  font-weight: bold;
+}
+
 
 .pictures {
   background-color: transparent;
